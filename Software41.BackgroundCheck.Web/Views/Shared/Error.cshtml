@@ -1,0 +1,23 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+
+@{
+    ViewBag.Title = "Error";
+}
+
+<h2> Sorry, an error occurred while processing your request!!?!</h2>
+
+<div>
+    Try again.  If the problem persists...
+    Close all your browser windows and re-login to the application. If the problem still persists...
+    Contact the service desk with the details of this error.
+</div>
+
+<h3>Error Details</h3>
+<div>
+    <strong>
+        @Model.Exception.Message
+    </strong>
+    <pre>@Model.Exception.StackTrace</pre>
+</div>
+    </div>
+</div>  
