@@ -11,7 +11,7 @@ namespace Software41.BackgroundCheck.Repository.EF
     public class BackgroundCheckContext:DbContext, IUnitOfWork
     {
         public BackgroundCheckContext()
-            : base("Software41.BackgroundCheckDb") { }
+            : base("BackgroundCheckDb") { }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

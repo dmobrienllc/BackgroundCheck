@@ -85,7 +85,7 @@ namespace Software41.BackgroundCheck.Repository.EF.Tests
             Assert.AreEqual(updatedApplicant.LastName, lastname);
         }
 
-        [TestMethod,Ignore]
+        [TestMethod]
         public void CanSaveApplicantEmploymentHistory_ExpectSuccess()
         {
             //Arrange
@@ -130,7 +130,7 @@ namespace Software41.BackgroundCheck.Repository.EF.Tests
             Assert.AreEqual(applicant.EmploymentHistory[0].JobTitle, jobTitle);
         }
 
-        [TestMethod]
+        [TestMethod,Ignore]
         public void CanUpdateApplicantEmploymentHistory_ExpectSuccess()
         {
             //Arrange
@@ -169,7 +169,7 @@ namespace Software41.BackgroundCheck.Repository.EF.Tests
             Assert.AreEqual(updatedApplicant.EmploymentHistory[0].Salary,newSalary);
         }
 
-        [TestMethod, Ignore]
+        [TestMethod]
         public void CanSaveApplicantEducationHistory__ExpectSuccess()
         {
             //Arrange            
@@ -226,7 +226,7 @@ namespace Software41.BackgroundCheck.Repository.EF.Tests
             Assert.AreEqual(savedApplicant.AddressHistory[1].Address1, secondRecordAddress);
         }
 
-        [TestMethod,Ignore]
+        [TestMethod]
         public void CanSaveApplicantWithAllHistoriesPopulated_ExpectSuccess()
         {
             //Arrange
@@ -268,7 +268,7 @@ namespace Software41.BackgroundCheck.Repository.EF.Tests
         /// Just go and manually inspect the history records associated with this;
         /// we'll build History repositories later if needed
         /// </summary>
-        [TestMethod]
+        [TestMethod,Ignore]
         public void CanRemoveApplicantAndHistory_ExpectSuccess()
         {
             //Arrange
